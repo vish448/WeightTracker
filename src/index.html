@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Tracker</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        margin: 2rem auto;
+        max-width: 350px;
+      }
+      label,
+      input {
+        display: block;
+        width: 100%;
+      }
+      label {
+        margin-top: 0.5rem;
+      }
+      input {
+        font-size: 1rem;
+        padding: 0.25rem;
+      }
+      button {
+        margin-top: 0.25rem;
+        padding: 0.5rem;
+        background-color: navy;
+        font-weight: bold;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weight Tracker</h1>
+
+    <form action="/success" data-netlify="true" netlify-honeypot="bot-field" name="registration">
+      <label for="weight">Weight</label>
+      <input type="text" name="weight" id="weight" />
+
+      <button type="submit">Add Weight</button>
+
+      <p class="hidden">
+        <label
+          >Don’t fill this out if you're human: <input name="bot-field"
+        /></label>
+      </p>
+    </form>
+  </body>
+</html>

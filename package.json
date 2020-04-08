@@ -1,0 +1,8 @@
+{
+  "name": "WeightTracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vish448/WeightTracker.git",
+  "author": "vishang soni <vishangsoni@gmail.com>",
+  "license": "MIT"
+}
