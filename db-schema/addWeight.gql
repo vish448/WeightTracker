@@ -3,5 +3,5 @@ type addWeight {
 }
 
 type Query {
-    weight: [addWeight!]!
+    allweight: [addWeight!]!
 }
