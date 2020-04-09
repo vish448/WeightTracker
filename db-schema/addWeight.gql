@@ -1,0 +1,7 @@
+type weight {
+    weight: Float!   
+}
+
+type Query {
+    weight: [weight!]!
+}
