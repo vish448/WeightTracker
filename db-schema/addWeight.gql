@@ -1,7 +1,7 @@
-type weight {
+type addWeight {
     weight: Float!   
 }
 
 type Query {
-    weight: [weight!]!
+    weight: [addWeight!]!
 }
