@@ -1,5 +1,6 @@
 type addWeight {
-    weight: Float!   
+    weight: Float!
+    date: String!
 }
 
 type Query {
