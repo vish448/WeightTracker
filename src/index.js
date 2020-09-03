@@ -1,19 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
-import api from './utils/api'
+import './index.css';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.css';
 
-class App extends React.Component{
-    componentDidMount() {
-        api.readAll().then((w) => {
-            console.log(w)
-        })
-    }
-    render(){
-        return(
-            <div>Hello World123</div>
-        )
-    }
-}
-
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
